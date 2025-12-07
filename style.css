@@ -83,7 +83,6 @@ button.bigrise{
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -98,6 +97,7 @@ button.bigrise{
   font-size: 20px;
   padding: -2px;
   margin-bottom: 20px;
+  transition: 0.3s all;
   }
 
 
@@ -133,6 +133,7 @@ button.bigrise{
   margin: 5px;
       margin-top: 90px;
       margin-bottom: 85px;
+      transition: 0.3s all;
   }
 
   .calc .button{
@@ -176,6 +177,7 @@ button.bigrise{
   margin: 5px;
       margin-top: 90px;
       margin-bottom: 85px;
+      transition: 0.3s all;
   }
 
   .calc .button{

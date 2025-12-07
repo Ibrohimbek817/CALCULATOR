@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  transition: 0.3s all;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 21%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
+
+.calc {
+  width: 300px;
+  height: 430px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+}
+
+.calc input.mon{
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.calc .button {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.calc button {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  transition: 0.1s all;
+  font-size: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 1px rgb(0, 0, 0, 0.03);
+}
+
+.calc button:active {
+  transform: scale(0.9);
+}
+
+.calc button.color {
+  background-color: rgb(255, 200, 0);
+}
+
+button.bigrise{
+  width: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .calc {
+  width: 230px;
+  height: 330px;
+  }
+
+  .calc button {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  padding: -2px;
+  margin-bottom: 20px;
+  }
+
+
+  .calc button.color {
+    width: 40px;
+    height: 40px;
+  background-color: rgb(255, 200, 0);
+  }
+
+  .calc input.mon{
+  width: 100%;
+  height: 40px;
+  }
+
+  button.bigrise{
+  width: 40%;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .calc {
+  width: 380px;
+  height: 580px;
+  padding: 20px;
+  }
+
+  .calc button {
+  width: 70px;
+  height: 70px;
+  font-size: 35px;
+  margin: 5px;
+      margin-top: 90px;
+      margin-bottom: 85px;
+  }
+
+  .calc .button{
+
+    margin-bottom: 20px;
+  }
+
+  .calc button.color {
+    width: 70px;
+    height: 70px;
+  background-color: rgb(255, 200, 0);
+  }
+
+  .calc input.mon{
+  width: 100%;
+  height: 40px;
+  }
+
+  button.bigrise{
+  width: 45%;
+}
+
+  .calc input.mon{
+  width: 100%;
+  height: 50px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+    .calc {
+  width: 380px;
+  height: 580px;
+  padding: 20px;
+  }
+
+  .calc button {
+  width: 80px;
+  height: 80px;
+  font-size: 35px;
+  margin: 5px;
+      margin-top: 90px;
+      margin-bottom: 85px;
+  }
+
+  .calc .button{
+    margin: -1px;
+    margin-bottom: 25px;
+  }
+
+  .calc button.color {
+    width: 70px;
+    height: 70px;
+  background-color: rgb(255, 200, 0);
+  }
+
+  .calc input.mon{
+  width: 100%;
+  height: 40px;
+  }
+
+  button.bigrise{
+  width: 45%;
+}
+
+  .calc input.mon{
+  width: 100%;
+  height: 50px;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .calc {
+  width: 300px;
+  height: 430px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+}
+
+.calc input.mon{
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.calc .button {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.calc button {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  transition: 0.1s all;
+  font-size: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 1px rgb(0, 0, 0, 0.03);
+}
+
+.calc button:active {
+  transform: scale(0.9);
+}
+
+.calc button.color {
+  background-color: rgb(255, 200, 0);
+}
+
+button.bigrise{
+  width: 50%;
+}
+
+}
